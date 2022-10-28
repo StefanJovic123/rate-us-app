@@ -4,27 +4,27 @@
 
 Application has following folder structure (here SRC folder is covered)
 
-- assets             // folder holds all images like .png, .jpg, jpeg and .svgs that are used in app
-- components         // folder holds all components that are used in app, serves as custom UI-kit specific to this project
-- eventHandler       // folder holds definition of all global handlers for emitted events
-- navigation         // folder holds definition of all available screens for this app
-- screens            // Screens holds all components that are used inside `navigation` folder, here are placed only components that are added to navigation stack
-- services           // holds following services: `emitter`, `inStoreReview`, `storage`, all services represents a interface like nature, so if in future we need to change library for emitter or storage we just need to do that in one place and impact whole app
-- websocket          // holds definition of websocket integration in form of a provider/context which is attached during application creation and which is available globally
-- App.js             
-- constants.js       // constants that are used throughout application
-- theme.js           // file contains custom definition of application theme
+- **assets**             `// folder holds all images like .png, .jpg, jpeg and .svgs that are used in app`
+- **components**         `// folder holds all components that are used in app, serves as custom UI-kit specific to this project`
+- **eventHandler**       `// folder holds definition of all global handlers for emitted events`
+- **navigation**         `// folder holds definition of all available screens for this app`
+- **screens**            `// Screens holds all components that are used inside **navigation** folder, here are placed only components that are added to navigation stack`
+- **services**           `// holds following services: **emitter**, **inStoreReview**, **storage**, all services represents a interface like nature, so if in future we need to change library for emitter or storage we just need to do that in one place and impact whole app`
+- **websocket**          `// holds definition of websocket integration in form of a provider/context which is attached during application creation and which is available globally`
+- **App.js**             
+- **constants.js**       `// constants that are used throughout application`
+- **theme.js**           `// file contains custom definition of application theme`
 
 
 ### used libraries
-- react-native-svg      // used for rendering svg images as components
-- react-native-ratings  // component that has been used for rendering ratings component
-- native-base           // UI kit library
-- eventemitter3         // enables emitting and listening to events
+- `react-native-svg`      // used for rendering svg images as components
+- `react-native-ratings`  // component that has been used for rendering ratings component
+- `native-base`           // UI kit library
+- `eventemitter3`         // enables emitting and listening to events
 
 Navigation libs
-- @react-navigation/native
-- @react-navigation/native-stack
+- `@react-navigation/native`
+- `@react-navigation/native-stack`
 
 
 ### App.js explained
@@ -74,17 +74,18 @@ Rules when the Rate Us popup is displayed:
 In order to test socket connection use this tool
 https://www.piesocket.com/
 
-creds are 
-email: stefan.jovic.up@gmail.com
-password: stefan@125
+creds are:
+- email: stefan.jovic.up@gmail.com
+- password: stefan@125
 
-- dashboard select channel
+How to test
+- on dashboard select channel
 - find and click on button `Test Online`
 - in next window click on `Connect`
 - after connect is done tpe anything in input and click send (it is made to react to any message for conveniance but there is code and comments that are indicating that events should be filtered in real world app)
 
 
 ## NOTE
-Backend flow diagram is not created cause of simple reason, it is very simple how i envision this solution, after one of mentioned actions is triggered depending on what we did, rated app or skipped it, request to backend is sent indicating that event and from that point on backend keeps tracks of when should next rate us dialog appear in app, appearance of rate us dialog can be forced by sending message via socket which will force showing rate us dialog. App is not doing anything regarding keeping tabs where last Rate Us dialog appeared and why.. all of that is left with backend.
+Backend flow diagram is not created cause of simple reason, it is very simple how i envision this solution, after one of mentioned actions is triggered depending on what we did, rated the app or skipped it, request to backend is sent indicating that event and from that point on backend keeps tracks of when should next rate us dialog appear in app, appearance of rate us dialog can be forced by sending message via socket which will force showing rate us dialog. App is not doing anything regarding keeping tabs where last Rate Us dialog appeared and why.. all of that is left with backend.
 
 
