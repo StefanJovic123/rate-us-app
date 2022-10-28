@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "514516094641",
+    "project_id": "rateusapp-d76a3",
+    "storage_bucket": "rateusapp-d76a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514516094641:android:95ac635805bdf5d9a7dc90",
+        "android_client_info": {
+          "package_name": "com.rateusnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514516094641-9ktvv71hjqvjl4frtdv36djgj04voijb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_JSu-6UbW3RjpfG2iukU4JHirpqLxclE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514516094641-9ktvv71hjqvjl4frtdv36djgj04voijb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
